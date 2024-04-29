@@ -1,0 +1,14 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>You are in the most essential stage of your project. You need to create a <code class="java">Dockerfile</code>. A <code class="java">Dockerfile</code> is a text document that contains all the commands to assemble an image. By following the objectives below create the <code class="java">Dockerfile</code>.</p>
+<p></p><div class="alert alert-primary">Be aware, only the existence of the <code class="java">Dockerfile</code> and the instructions will be tested for this stage. We will test if the running container is meet our expectations in the following stages.</div>
+<h5 id="objectives">Objectives</h5>
+<ul>
+<li>Build your image from <code class="java">python:3.11-slim</code></li>
+<li>Expose port <code class="java">8000</code></li>
+<li>Define the working directory <code class="java">/home/app</code></li>
+<li>Add the content of the <code class="java">hyper-app</code> to the working directory</li>
+<li>Add a run instruction with <code class="java">pip install -r requirements.txt</code> to the <code class="java">Dockerfile</code>. This command will install the dependencies that are required for your project.</li>
+<li>Make the entrypoint of the image, run the following command with parameters <code class="java">["python3", "main.py"]</code></li>
+</ul>
+</div>

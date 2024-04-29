@@ -1,0 +1,87 @@
+type: edu
+files:
+  - name: hyper-app/main.py
+    visible: true
+    text: |
+      """
+      Do not change this file!
+      """
+      
+      from flask import Flask, jsonify
+      
+      app = Flask(__name__)
+      
+      
+      @app.route('/')
+      def home():
+          return jsonify(
+              {
+                  "id": "90",
+                  "first_name": "Hyper",
+                  "last_name": "Skill",
+              }
+          )
+      
+      
+      if __name__ == '__main__':
+          print("This is hyper-app!")
+          app.run(host="0.0.0.0", port=8000)
+    learner_created: false
+  - name: hyper-app/requirements.txt
+    visible: true
+    text: |
+      flask
+    learner_created: false
+  - name: test/__init__.py
+    visible: false
+    learner_created: false
+  - name: test/tests.py
+    visible: false
+    text: |-
+      import docker
+      from hstest import StageTest, dynamic_test, CheckResult
+      
+      project_images = ["python:3.11-slim"]
+      
+      
+      class DockerTest(StageTest):
+      
+          def __init__(self, *args, **kwargs):
+              super().__init__(*args, **kwargs)
+              self.output = None
+              self.client = docker.from_env()
+      
+          @dynamic_test()
+          def test1(self):
+              """Tests if the base image exists in the system"""
+              images_text = " ".join([str(image) for image in self.client.images.list()])
+              for image in project_images:
+                  if image not in images_text:
+                      return CheckResult.wrong(f"'{image}' not found in the system images!")
+      
+              return CheckResult.correct()
+      
+      
+      if __name__ == '__main__':
+          DockerTest().run_tests()
+    learner_created: false
+  - name: Dockerfile
+    visible: true
+    text: |+
+      # Write the codes below!
+    
+    
+    learner_created: false
+  - name: tests.py
+    visible: false
+    text: |-
+      from test.tests import DockerTest
+      
+      if __name__ == '__main__':    DockerTest().run_tests()
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/28752#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 19 Jan 2024 06:48:00 UTC"
+record: 1

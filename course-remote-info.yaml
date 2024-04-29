@@ -1,0 +1,89 @@
+hyperskill_project:
+  id: 346
+  ide_files: https://cogniterra.org/media/attachments/lesson/27774/additional_files.json
+  is_template_based: false
+  use_ide: true
+  environment: unittest
+update_date: "Mon, 29 Apr 2024 04:17:16 UTC"
+stages:
+  - id: 2034
+    step: 28752
+    is_completed: true
+  - id: 2035
+    step: 28753
+    is_completed: true
+  - id: 2036
+    step: 28754
+    is_completed: true
+  - id: 2037
+    step: 28755
+    is_completed: true
+  - id: 2038
+    step: 28756
+    is_completed: true
+topics:
+  0:
+    - title: Operating systems
+      theory_id: 9704
+    - title: Command line overview
+      theory_id: 8977
+    - title: Parameters and options
+      theory_id: 9746
+    - title: First program in bash
+      theory_id: 12135
+    - title: Variables and aliases
+      theory_id: 16670
+    - title: "Introduction to docker, installation"
+      theory_id: 15850
+    - title: Run the "hello-world" docker container
+      theory_id: 16020
+    - title: Basic operations with a container
+      theory_id: 17573
+    - title: Docker build and docker tag
+      theory_id: 23950
+    - title: "Dockerfile (FROM, LABEL, CMD, ENTRYPOINT)"
+      theory_id: 24322
+    - title: "Dockerfile (RUN, SHELL)"
+      theory_id: 25768
+    - title: Best practices for writing Dockerfiles
+      theory_id: 26511
+    - title: Working with environment variables
+      theory_id: 21828
+    - title: YAML
+      theory_id: 12722
+    - title: "Synchronous, asynchronous, parallel"
+      theory_id: 9332
+    - title: Processes and threads
+      theory_id: 9420
+    - title: Introduction to Linux
+      theory_id: 9526
+    - title: Containers
+      theory_id: 15082
+    - title: Environment variables
+      theory_id: 21817
+  1:
+    - title: Archiving and extracting data
+      theory_id: 14190
+    - title: Working with file modes and permissions
+      theory_id: 13961
+    - title: "Dockerfile (COPY, ADD, ENV, ARG)"
+      theory_id: 24662
+    - title: "Dockerfile (USER, WORKDIR, EXPOSE)"
+      theory_id: 25310
+    - title: Files
+      theory_id: 13025
+    - title: File types
+      theory_id: 13017
+    - title: File modes and permissions
+      theory_id: 13953
+  2:
+    - title: Libraries
+      theory_id: 8504
+    - title: Semantic versioning
+      theory_id: 19244
+    - title: Computer Memory
+      theory_id: 18003
+    - title: Components of computer memory
+      theory_id: 18049
+    - title: Memory management
+      theory_id: 18243
